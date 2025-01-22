@@ -25,12 +25,12 @@ jobs:
       - name: Run tests with coverage
         run: |
           coverage run -m pytest
-          coverage report -m
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
         with:
+          include-hidden-files: true
           name: coverage-files
-          path: ./.coverage
+          path: .coverage
           retention-days: 1
   coverage-report:
     name: Generate coverage report
