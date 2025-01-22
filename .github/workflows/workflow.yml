@@ -25,6 +25,7 @@ jobs:
       - name: Run tests with coverage
         run: |
           coverage run -m pytest
+          coverage report -m
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
         with:
@@ -54,7 +55,7 @@ jobs:
           coverage report
           coverage xml
       - name: Upload coverage XML
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage.xml
           path: .
