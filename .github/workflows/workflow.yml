@@ -48,7 +48,7 @@ jobs:
       - name: Download coverage artifact
         uses: actions/download-artifact@v3
         with:
-          name: coverage-report
+          name: .coverage
           path: .
       - name: Generate coverage report
         run: |
