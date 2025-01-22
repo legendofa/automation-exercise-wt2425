@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coverage-files
-          path: .coverage
+          path: ./.coverage
           retention-days: 1
   coverage-report:
     name: Generate coverage report
