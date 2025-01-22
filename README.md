@@ -1,4 +1,4 @@
-![example workflow](https://github.com/legendofa/automation-exercise-wt2425/actions/workflows/workflow.yml/badge.svg)
+![SSE CI/CD](https://github.com/legendofa/automation-exercise-wt2425/actions/workflows/workflow.yml/badge.svg)
 
 # Automation Exercise
 
