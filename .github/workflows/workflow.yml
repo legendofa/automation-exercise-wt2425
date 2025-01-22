@@ -52,8 +52,8 @@ jobs:
           path: .
       - name: Generate coverage report
         run: |
-          coverage report
-          coverage xml
+          coverage report -i .coverage
+          coverage xml -i .coverage
       - name: Upload coverage XML
         uses: actions/upload-artifact@v3
         with:
