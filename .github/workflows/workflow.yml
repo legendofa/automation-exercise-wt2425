@@ -28,8 +28,8 @@ jobs:
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
-          name: .coverage
-          path: .
+          name: coverage-files
+          path: .coverage
           retention-days: 1
   coverage-report:
     name: Generate coverage report
@@ -46,10 +46,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Download coverage artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v2
         with:
-          name: .coverage
-          path: .
+          name: coverage-files
       - name: Generate coverage report
         run: |
           coverage report -i .coverage
